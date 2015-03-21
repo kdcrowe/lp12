@@ -1,17 +1,29 @@
-var WIDTH=1000, HEIGHT=600;
-var SCREENL=100, SCREENT=0, SCREENB=500, SCREENR=700;
-var BUTCOL1=10, BUTCOL2=SCREENR+10, BUTCOL3=SCREENR+120;
-var BUTNEXTV=25;
-var canvas, ctx, keystate;
-var buttons, waveforms, vitals;
+var WIDTH=1000,
+    HEIGHT=600;
+var SCREENL=100,
+    SCREENT=0,
+    SCREENB=500,
+    SCREENR=700;
+var BUTCOL1=10,
+    BUTCOL2=SCREENR+10,
+    BUTCOL3=SCREENR+120;
+var BUTWIDTH=100,
+    BUTHEIGHT=20;
+var BUTNEXTV=25;	// NEXT Vertical for button row
+var canvas,
+    ctx,
+    keystate;
+var buttons,
+    waveforms,
+    vitals;
 
 
 var button = {
 	x: null,
 	y: null,
 	r: 10,
-	width: 100,
-	height: 20,
+	width: BUTWIDTH,
+	height: BUTHEIGHT,
 	hasLED: "False",
 	LEDon: "False",
 	color: "DimGray",
